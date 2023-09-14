@@ -34,5 +34,32 @@ When using data sets to train machine learning models, you’ll often hear the p
 
 Data Cleaning: 
 We are using supervised learning and we use on data set basically the input and output value.Libraries like pandas are basic block for cleaning the data. Import basic libraries like python, 
-matplotlib and NumPy. Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. NumPy supports a wide range of hardware and computing platforms, and plays well with distributed, GPU, and sparse array libraries
+matplotlib and NumPy. Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. 
+NumPy supports a wide range of hardware and computing platforms, and plays well with distributed, GPU, and sparse array libraries
+
+Feature Engineering: 
+We are copying the data frame into a new data frame by using copy () function. We are doing 
+the feature engineering to make the other steps further easy. So, to check we are finding unique 
+location by calling the location. unique () function and grouping it by calling the dfs. groupby
+() function for the location with aggregation function.
+Also, we made a new feature here which is price per square feet.
+
+
+Outlier Detection: 
+We are just detecting and then removing the outliers, sometimes they are just not data errors 
+but also, they are causing extreme variation in the dataset. We are using different techniques 
+to detect the outliers like STANDARD DEVIATION or SIMPLE DOMAIN KNOWLEDGE.
+
+
+Model Building: 
+We are building the machine learning model and then using the K fold cross validation and 
+grid search CV to come up with the best algorithm and the best parameter.
+Machine learning model can’t interpret the text data. So, we have a text data in our data set
+(location) and we have to convert it into the numeric values. 
+We are using the pandas dummy model to do it, the function called is like pd.get_dummies
+(df10.location). as the feature location is having the data in the form of text so this function
+will convert this data into the numeric values. When we have the 1st location, all the column 
+will be 1 and every other value in data set is zero.
+
+
 
