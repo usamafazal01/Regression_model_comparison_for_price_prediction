@@ -61,5 +61,6 @@ We are using the pandas dummy model to do it, the function called is like pd.get
 will convert this data into the numeric values. When we have the 1st location, all the column 
 will be 1 and every other value in data set is zero.
 
+This is all about project
 
 
